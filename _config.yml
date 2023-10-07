@@ -5,11 +5,12 @@
 # NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
 
 ### Site Settings ###
-title               : IS445 Jekyll Template 
+title               : Leo's GitHub Page
 description         : >-
-                      I am definitely not a corgi!
+                      YAHAHA! <br>
+                      This small seed was given to you by a Korok. It has a distinct smell.
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
-#                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
+                           # otherwise will be hosted at <your-username>.github.io/{{base_url}}
 repository          : XinzheMiao/XinzheMiao.github.io   # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects) -- for example, I would put "jnaiman" without the quotes after the ":" here
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
@@ -34,13 +35,13 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : A. P. Corgi
-  image             : https://i0.wp.com/www.threecorgis.com///wp-content/uploads/2014/09/three_corgis618-1-1.jpg
+  name              : Xinzhe (Leo) Miao
+  image             : https://cdn.vox-cdn.com/thumbor/Hsuptjj_yXH65Tx0PXAn598h3TQ=/0x0:1280x720/920x613/filters:focal(538x258:742x462):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/72374390/Zelda_Tears_of_the_Kingdom_Korok_Seed_locations_1.0.jpg
 #  behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
+  email             : xinzhem2@illinois.edu
 #  facebook          : your_username
-  github            : jnaiman # JPN
+  github            : XinzheMiao # JPN
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
