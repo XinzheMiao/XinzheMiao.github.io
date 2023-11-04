@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+  Updates for JPN Spring 2023
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HW#8 Jekyll Webpage">
+  <meta property="og:description" content="Answer for HW#8 Finished by Leo!">
+  <meta property="og:image" content="assets/pngs/hw8.png">
+
+  <title>HW#8 Jekyll Webpage</title>
+  <meta name="description" content="Answer for HW#8 Finished by Leo!">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Leo's GitHub Page</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <p>Here is the url for the dataset that used in this HW#8:</p>
+
+<ul>
+  <li>https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv</li>
+</ul>
+
+<h1 id="chart-i">Chart I:</h1>
+
+<p><strong>Plot 1. Histogram: Number of Buildings for Each Agency</strong></p>
+
+<ul>
+  <li>The bar chart titled “Number of Buildings Acquired Each Agency” provides a visual representation of the number of buildings associated with different agencies. Each bar corresponds to a specific agency, with the agency’s name labeled on the x-axis. The height of each bar indicates the number of buildings that the agency possesses, as detailed on the y-axis.</li>
+</ul>
+
+<p><strong>Plot 2. LinePlot: Number of Buildings for Each Agency</strong></p>
+
+<ul>
+  <li>The plot is named “Number of Buildings for Each Year”. Using a line chart, the x-axis represents the years (termed “Year Constructed”) in which buildings were constructed, and the y-axis quantifies the number of buildings constructed in each of those years. It represents the volume of buildings constructed for a given year.</li>
+</ul>
+
+<p><strong>Selection Mechanism:</strong></p>
+
+<ul>
+  <li>
+    <p>The plot uses an interactive brush selection named brush, which allows you to select a range of data in the plot by clicking and dragging across the plot area. This selection is defined to work across both the ‘x’ and ‘y’ encodings.</p>
+  </li>
+  <li>
+    <p>The two charts are displayed side by side (indicated by the | operator in chart1 | chart2).
+Interactivity is established between the two charts via the brush selection. When you select a range of agencies in chart1 (the bar chart), chart2 (the line chart) will update to show only the data for the selected agencies and their corresponding ‘Year Constructed’.</p>
+  </li>
+  <li>
+    <p>Overall, this interactive visualization allows you to filter the view of the data in one chart based on selections made in the other, providing a linked view that helps to explore and understand the relationships between the agency and the years the buildings were constructed.</p>
+  </li>
+</ul>
+
+<vegachart schema-url="/assets/json/hw8_chart1.json" style="width: 100%"></vegachart>
+
+<h1 id="chart-ii">Chart II:</h1>
+
+<p><strong>Chart 3: Bar Chart of Number of Buildings by Agency</strong></p>
+
+<p>Visualization Description:</p>
+<ul>
+  <li>This bar chart visualizes the number of buildings associated with each agency. The agencies are listed on the x-axis, and the number of buildings is represented by the height of the bars on the y-axis. This gives a quick visual comparison of how many buildings are managed by each agency.</li>
+</ul>
+
+<p>Encoding Types:</p>
+<ul>
+  <li>The x-axis uses an ordinal encoding for ‘Agency Name’, arranging the agencies in a nominal fashion.</li>
+  <li>The y-axis is quantitative, representing a count of buildings per agency.</li>
+</ul>
+
+<p>Color Scheme:</p>
+<ul>
+  <li>No specific color encoding</li>
+</ul>
+
+<p>Data Transformations:</p>
+<ul>
+  <li>The data has been pre-filtered (building_filtered) to possibly exclude certain conditions or focus on specific agencies before being visualized.</li>
+</ul>
+
+<p>Interactivity:</p>
+<ul>
+  <li>Dropdown: Allows the viewer to filter the data displayed by selecting an agency from a dropdown list, focusing on data of interest without distractions from other agencies.</li>
+  <li>Brush: Enables the user to select a range on the chart (although how this works on an ordinal x-axis might be limited).</li>
+</ul>
+
+<p><strong>Chart 4: Line Chart of Buildings by Year Constructed</strong></p>
+
+<p>Visualization Description:</p>
+<ul>
+  <li>This line chart provides a temporal view of the number of buildings constructed over the years. Each point on the x-axis represents a year, and the y-axis shows how many buildings were constructed in that year.</li>
+</ul>
+
+<p>Encoding Types:</p>
+<ul>
+  <li>The x-axis is temporal, showing ‘Year Constructed’, which allows for a chronological representation of data.</li>
+  <li>The y-axis is quantitative, counting the number of buildings.</li>
+</ul>
+
+<p>Color Scheme:</p>
+<ul>
+  <li>Similar to Chart 3, no specific color encoding is mentioned.</li>
+</ul>
+
+<p>Data Transformations:</p>
+<ul>
+  <li>Similar to Chart 3, any transformations would have occurred in the building_filtered data preparation.</li>
+</ul>
+
+<p>Interactivity:</p>
+<ul>
+  <li>Brush: When used in this chart, the brush selection allows for a more dynamic investigation of building construction over specific time periods.</li>
+  <li>Dropdown: This interacts with the selection from Chart 3, allowing the user to see the temporal distribution of buildings for the selected agency.</li>
+</ul>
+
+<p><strong>Combined Chart:</strong>
+Interactions in one chart will affect the other. Specifically:</p>
+<ul>
+  <li>Selecting an agency from the dropdown will filter both charts to only show data for that agency.</li>
+  <li>Using the brush tool in either chart will filter the other chart to show data for the selected range. However, since the brush is defined with both ‘x’ and ‘y’ encodings, its effect will depend on how it is used in the context of these particular charts.</li>
+</ul>
+
+<vegachart schema-url="/assets/json/hw8_chart2.json" style="width: 100%"></vegachart>
+
+<!-- these are written in a combo of html and liquid -->
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/vega/vega/blob/main/docs/data/cars.json">
+  The Data
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb">
+  The Analysis
+</a>
+</div>
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Xinzhe (Leo) Miao</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:xinzhem2@illinois.edu"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/XinzheMiao"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div>
+
+  Theme by <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a> and <a href="https://github.com/4dcu-be/4dcu.be">4dcu.be</a>.
+
+  
+<!--<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+-->
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+<!--
+end of checks! JPN
+-->
+
+</html>
