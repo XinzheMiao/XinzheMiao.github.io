@@ -24,7 +24,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="IS445 Final Project Jekyll Webpage (Fall 2023)">
   <meta property="og:description" content="The purpose of this assignment is to create a 'Viz for the Public' with a 'data journalism' type article.">
-  <meta property="og:image" content="assets/pngs/hw8.png">
+  <meta property="og:image" content="assets/pngs/uiuc_ischool.png">
 
   <title>IS445 Final Project Jekyll Webpage (Fall 2023)</title>
   <meta name="description" content="The purpose of this assignment is to create a 'Viz for the Public' with a 'data journalism' type article.">
@@ -74,111 +74,181 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <p>Here is the url for the dataset that used in this HW#8:</p>
+  <h1 id="is-445-final-project-fall-2023">IS 445 Final Project (Fall 2023)</h1>
+<p>Group 5: Xinzhe Miao (xinzhem2), Wenjin Duan (wenjind2), Yuxi Tian (yuxit2)</p>
 
+<h3 id="dataset-information">Dataset Information:</h3>
 <ul>
-  <li>https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv</li>
+  <li>Dataset Name: <strong>Electric Vehicle Population Data</strong></li>
+  <li>Data Provided by: Washington State Department of Licensing</li>
+  <li>Dataset Description: This dataset shows the Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing (DOL).</li>
+  <li>Dataset Official Website: https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2</li>
+  <li>license: https://opendatacommons.org/licenses/odbl/1-0/</li>
 </ul>
 
-<h1 id="chart-i">Chart I:</h1>
+<p>The Open Database License (ODbL) is a legal tool that governs the use, sharing, and modification of a database, covering copyright and database rights while excluding rights to individual contents, computer programs, patents, and trademarks. It functions as both a license and a contractual agreement between the licensor and the user.</p>
 
-<p><strong>Plot 1. Histogram: Number of Buildings for Each Agency</strong></p>
-
-<ul>
-  <li>The bar chart titled “Number of Buildings Acquired Each Agency” provides a visual representation of the number of buildings associated with different agencies. Each bar corresponds to a specific agency, with the agency’s name labeled on the x-axis. The height of each bar indicates the number of buildings that the agency possesses, as detailed on the y-axis.</li>
-</ul>
-
-<p><strong>Plot 2. LinePlot: Number of Buildings for Each Agency</strong></p>
+<p>Within this license, it includes several right and restriction that the users should obeied or has. The Open Database License (ODbL) grants users the right to use, modify, and share a licensed database freely, including for commercial purposes, with conditions such as maintaining copyright and database right notices, and sharing derivatives under the same or a compatible license (Share Alike). The license permits voluntary, waivable, and non-waivable compulsory license schemes differently and reserves the licensor’s right to potentially release the database under different terms or stop distribution.</p>
 
 <ul>
-  <li>The plot is named “Number of Buildings for Each Year”. Using a line chart, the x-axis represents the years (termed “Year Constructed”) in which buildings were constructed, and the y-axis quantifies the number of buildings constructed in each of those years. It represents the volume of buildings constructed for a given year.</li>
+  <li>Dataset Size: 154K Rows with 20 Columns.</li>
+  <li>File Size: 38.7MB (Accepted by GitHub Limit)</li>
 </ul>
 
-<p><strong>Selection Mechanism:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Column Name</th>
+      <th>Description</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VIN (1-10)</td>
+      <td>The 1st 10 characters of each vehicle’s Vehicle Identification Number (VIN).</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>County</td>
+      <td>This is the geographic region of a state that a vehicle’s owner is listed to reside within. Vehicles registered in Washington state may be located in other states.</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td>The city in which the registered owner resides.</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td>This is the geographic region of the country associated with the record. These addresses may be located in other states.</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Postal Code</td>
+      <td>The 5 digit zip code in which the registered owner resides.</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Model Year</td>
+      <td>The model year of the vehicle, determined by decoding the Vehicle Identification Number (VIN).</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Make</td>
+      <td>The manufacturer of the vehicle, determined by decoding the Vehicle Identification Number (VIN).</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td>The model of the vehicle, determined by decoding the Vehicle Identification Number (VIN).</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Electric Vehicle Type</td>
+      <td>This distinguishes the vehicle as all electric or a plug-in hybrid.</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Clean Alternative Fuel Vehicle (CAFV) Eligibility</td>
+      <td>This categorizes vehicle as Clean Alternative Fuel Vehicles (CAFVs) based on the fuel requirement and electric-only range requirement in House Bill 2042 as passed in the 2019 legislative session.</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Electric Range</td>
+      <td>Describes how far a vehicle can travel purely on its electric charge.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>Base MSRP</td>
+      <td>This is the lowest Manufacturer’s Suggested Retail Price (MSRP) for any trim level of the model in question.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>Legislative District</td>
+      <td>The specific section of Washington State that the vehicle’s owner resides in, as represented in the state legislature.</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>DOL Vehicle ID</td>
+      <td>Unique number assigned to each vehicle by Department of Licensing for identification purposes.</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Vehicle Location</td>
+      <td>The center of the ZIP Code for the registered vehicle.</td>
+      <td>Point</td>
+    </tr>
+    <tr>
+      <td>Electric Utility</td>
+      <td>This is the electric power retail service territories serving the address of the registered vehicle. All ownership types for areas in Washington are included: federal, investor owned, municipal, political subdivision, and cooperative. If the address for the registered vehicle falls into an area with overlapping electric power retail service territories then a single pipe | delimits utilities of same TYPE and a double pipe || delimits utilities of different types. Blanks occur for vehicles with addresses outside of Washington or for addresses falling into areas in Washington not containing a mapped electric power retail service territory in the source data.</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>2020 Census Tract</td>
+      <td>The census tract identifier is a combination of the state, county, and census tract codes as assigned by the United States Census Bureau in the 2020 census, also known as Geographic Identifier (GEOID). More information can be found here: <a href="https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13">Census Glossary</a> and <a href="https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html">Geographic Identifiers</a></td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Counties</td>
+      <td>No Description</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>Congressional Districts</td>
+      <td>No Description</td>
+      <td>Plain Text</td>
+    </tr>
+    <tr>
+      <td>WAOFM - GIS - Legislative District Boundary</td>
+      <td>No Description</td>
+      <td>Plain Text</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="description-plot">Description Plot</h3>
+
+<p><strong>Plot 1: Total Electric Vehicle Sales by Model Year</strong>
+<img src="/assets/images/plot1.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%" /></p>
 
 <ul>
-  <li>
-    <p>The plot uses an interactive brush selection named brush, which allows you to select a range of data in the plot by clicking and dragging across the plot area. This selection is defined to work across both the ‘x’ and ‘y’ encodings.</p>
-  </li>
-  <li>
-    <p>The two charts are displayed side by side (indicated by the | operator in chart1 | chart2).
-Interactivity is established between the two charts via the brush selection. When you select a range of agencies in chart1 (the bar chart), chart2 (the line chart) will update to show only the data for the selected agencies and their corresponding ‘Year Constructed’.</p>
-  </li>
-  <li>
-    <p>Overall, this interactive visualization allows you to filter the view of the data in one chart based on selections made in the other, providing a linked view that helps to explore and understand the relationships between the agency and the years the buildings were constructed.</p>
-  </li>
+  <li>The bar plot illustrates the total electric vehicle sales by model year. It shows a clear trend of increasing sales over the years, with particular spikes in certain years, which likely correspond to the introduction of popular models or increased adoption due to other factors like improvements in infrastructure, technology, or government incentives.</li>
 </ul>
+
+<p><strong>Plot 2: Top Electric Vehicle Models by Year</strong>
+<img src="/assets/images/plot2.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%" /></p>
+
+<ul>
+  <li>Here is the line plot showing the count of the top electric vehicle models by model year. Each line represents one of the top models, and the trend in their counts over the years is visible. You can see how some models have gained popularity over time, especially recent models like the Tesla Model 3 and Model Y.</li>
+</ul>
+
+<p><strong>Plot 3: Average Electric Range for different car ‘Make’ with corresponding ‘Models’</strong>
+<img src="/assets/images/plot3.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%" /></p>
+
+<ul>
+  <li>The horizontal bar plots display the average electric range for each model within the top makes. Each subplot corresponds to one of the top makes, and the models are sorted by their average electric range. This visualization helps in comparing the electric range within the lineup of each make.</li>
+</ul>
+
+<p><strong>Plot 4: Number of Models for each ‘Make’</strong>
+<img src="/assets/images/plot4.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%" /></p>
+
+<ul>
+  <li>The bar plot shows the number of models available for each make. Makes with a wider range of models are on the left, indicating a larger portfolio of electric vehicles, while those with fewer models are on the right. This visualization provides an insight into the diversity of electric vehicles offered by different manufacturers.​</li>
+</ul>
+
+<p><strong>Plot 5: Top Model Location in 2023 and later</strong>
+<img src="/assets/images/plot5.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%" /></p>
+
+<ul>
+  <li>Data Filtering: The dataset is filtered to include only records where the ‘State’ is ‘WA’ (Washington) and the ‘Model Year’ is 2023 or later. This step ensures that the analysis focuses on recent EV registrations in Washington.</li>
+  <li>Identifying the Top Model: Among these filtered records, the code identifies the most popular EV model based on the number of registrations. The value_counts() method is used to count occurrences of each model, and the top one is selected.</li>
+  <li>The resulting map should show the locations of the top EV model in Washington state as of 2023, overlaid on a basemap for better geographic context. This analysis is useful for understanding the popularity and distribution of this EV model in Washington.</li>
+</ul>
+
+<h1 id="interactive-plot">Interactive Plot:</h1>
 
 <vegachart schema-url="/assets/json/final1.json" style="width: 100%"></vegachart>
-
-<h1 id="chart-ii">Chart II:</h1>
-
-<p><strong>Chart 3: Bar Chart of Number of Buildings by Agency</strong></p>
-
-<p>Visualization Description:</p>
-<ul>
-  <li>This bar chart visualizes the number of buildings associated with each agency. The agencies are listed on the x-axis, and the number of buildings is represented by the height of the bars on the y-axis. This gives a quick visual comparison of how many buildings are managed by each agency.</li>
-</ul>
-
-<p>Encoding Types:</p>
-<ul>
-  <li>The x-axis uses an ordinal encoding for ‘Agency Name’, arranging the agencies in a nominal fashion.</li>
-  <li>The y-axis is quantitative, representing a count of buildings per agency.</li>
-</ul>
-
-<p>Color Scheme:</p>
-<ul>
-  <li>No specific color encoding</li>
-</ul>
-
-<p>Data Transformations:</p>
-<ul>
-  <li>The data has been pre-filtered (building_filtered) to possibly exclude certain conditions or focus on specific agencies before being visualized.</li>
-</ul>
-
-<p>Interactivity:</p>
-<ul>
-  <li>Dropdown: Allows the viewer to filter the data displayed by selecting an agency from a dropdown list, focusing on data of interest without distractions from other agencies.</li>
-  <li>Brush: Enables the user to select a range on the chart (although how this works on an ordinal x-axis might be limited).</li>
-</ul>
-
-<p><strong>Chart 4: Line Chart of Buildings by Year Constructed</strong></p>
-
-<p>Visualization Description:</p>
-<ul>
-  <li>This line chart provides a temporal view of the number of buildings constructed over the years. Each point on the x-axis represents a year, and the y-axis shows how many buildings were constructed in that year.</li>
-</ul>
-
-<p>Encoding Types:</p>
-<ul>
-  <li>The x-axis is temporal, showing ‘Year Constructed’, which allows for a chronological representation of data.</li>
-  <li>The y-axis is quantitative, counting the number of buildings.</li>
-</ul>
-
-<p>Color Scheme:</p>
-<ul>
-  <li>Similar to Chart 3, no specific color encoding is mentioned.</li>
-</ul>
-
-<p>Data Transformations:</p>
-<ul>
-  <li>Similar to Chart 3, any transformations would have occurred in the building_filtered data preparation.</li>
-</ul>
-
-<p>Interactivity:</p>
-<ul>
-  <li>Brush: When used in this chart, the brush selection allows for a more dynamic investigation of building construction over specific time periods.</li>
-  <li>Dropdown: This interacts with the selection from Chart 3, allowing the user to see the temporal distribution of buildings for the selected agency.</li>
-</ul>
-
-<p><strong>Combined Chart:</strong>
-Interactions in one chart will affect the other. Specifically:</p>
-<ul>
-  <li>Selecting an agency from the dropdown will filter both charts to only show data for that agency.</li>
-  <li>Using the brush tool in either chart will filter the other chart to show data for the selected range. However, since the brush is defined with both ‘x’ and ‘y’ encodings, its effect will depend on how it is used in the context of these particular charts.</li>
-</ul>
-
-<vegachart schema-url="/assets/json/hw8_chart2.json" style="width: 100%"></vegachart>
 
 <!-- these are written in a combo of html and liquid -->
 
