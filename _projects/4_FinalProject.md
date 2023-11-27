@@ -144,7 +144,26 @@ This dataset **"Electric_Vehicle_Title_and_Registration_Activity.csv"**, as one 
 * **Environmental Impact Assessment:** The usage data (like odometer readings) combined with population data can help in estimating the environmental impact and benefits of electric vehicles in different regions.
 
 
+### Contextual Dataset Visualization
+<img src="{{ site.baseurl }}/assets/pngs/plot6.png" style="width: 100%">
 
+**Plot 6.1: Distribution of Clean Alternative Fuel Vehicle Types**
+
+* Our first visual analysis is a count plot that illustrates the frequency distribution of different types of clean alternative fuel vehicles within the dataset. The x-axis categorizes the vehicles into different fuel types, such as Battery Electric Vehicles (BEV) and Plug-in Hybrid Electric Vehicles (PHEV). The y-axis quantifies the number of vehicles within each category.
+
+* Findings:
+BEVs significantly outnumber PHEVs, indicating a strong market preference for fully electric vehicles over hybrids.
+This trend suggests that consumers may favor the environmental benefits and potential cost savings associated with BEVs.
+The infrastructure and policy-making should continue to support the growth of BEV technology, which is likely to dominate the clean vehicle market.
+
+**Plot 6.2: New vs. Used Electric Vehicles**
+
+* The second visual analysis compares the number of new electric vehicles to used ones in the dataset. It categorizes vehicles on the x-axis as either 'New' or 'Used', while the y-axis represents the count of occurrences in each category.
+
+* Findings:
+There is a substantial predominance of new EVs compared to used ones, implying a rapidly growing market with a high turnover of new models and technology.
+The prevalence of new EVs may indicate consumer confidence in newer technologies and a potential growth area for manufacturers and dealerships.
+The used EV market appears to be significantly smaller, which may suggest a lack of availability or consumer hesitation towards pre-owned electric vehicles.
 
 <!-- these are written in a combo of html and liquid --> 
 
