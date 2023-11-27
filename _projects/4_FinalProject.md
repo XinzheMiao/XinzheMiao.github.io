@@ -12,6 +12,7 @@ custom_js:
 
 # IS 445 Final Project (Fall 2023)
 Group 5: Xinzhe Miao (xinzhem2), Wenjin Duan (wenjind2), Yuxi Tian (yuxit2)
+<br>
 
 ### Dataset Information: 
 * Dataset Name: **Electric Vehicle Population Data**
@@ -51,43 +52,96 @@ Within this license, it includes several right and restriction that the users sh
 | Congressional Districts                            | No Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Plain Text      |
 | WAOFM - GIS - Legislative District Boundary                          | No Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |Plain Text     |
 
+<br>
+<br>
 
 
 
 ### Description Plot
 
 **Plot 1: Total Electric Vehicle Sales by Model Year**
-<img src="{{ site.baseurl }}/assets/images/plot1.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
+<img src="{{site.baseurl }}/assets/pngs/plot1.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
 
 * The bar plot illustrates the total electric vehicle sales by model year. It shows a clear trend of increasing sales over the years, with particular spikes in certain years, which likely correspond to the introduction of popular models or increased adoption due to other factors like improvements in infrastructure, technology, or government incentives.
 
+<br>
+
 **Plot 2: Top Electric Vehicle Models by Year**
-<img src="{{ site.baseurl }}/assets/images/plot2.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
+<img src="{{ site.baseurl }}/assets/pngs/plot2.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
 
 * Here is the line plot showing the count of the top electric vehicle models by model year. Each line represents one of the top models, and the trend in their counts over the years is visible. You can see how some models have gained popularity over time, especially recent models like the Tesla Model 3 and Model Y.
 
+<br>
+
 **Plot 3: Average Electric Range for different car 'Make' with corresponding 'Models'**
-<img src="{{ site.baseurl }}/assets/images/plot3.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
+<img src="{{ site.baseurl }}/assets/pngs/plot3.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
 
 * The horizontal bar plots display the average electric range for each model within the top makes. Each subplot corresponds to one of the top makes, and the models are sorted by their average electric range. This visualization helps in comparing the electric range within the lineup of each make.
 
+<br>
+
 **Plot 4: Number of Models for each 'Make'**
-<img src="{{ site.baseurl }}/assets/images/plot4.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
+<img src="{{ site.baseurl }}/assets/pngs/plot4.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
 
 * The bar plot shows the number of models available for each make. Makes with a wider range of models are on the left, indicating a larger portfolio of electric vehicles, while those with fewer models are on the right. This visualization provides an insight into the diversity of electric vehicles offered by different manufacturers.​
 
+<br>
 
 **Plot 5: Top Model Location in 2023 and later**
-<img src="{{ site.baseurl }}/assets/images/plot5.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
+<img src="{{ site.baseurl }}/assets/pngs/plot5.png" alt="Total Electric Vehicle Sales by Model Year" style="width: 100%">
 
 * Data Filtering: The dataset is filtered to include only records where the 'State' is 'WA' (Washington) and the 'Model Year' is 2023 or later. This step ensures that the analysis focuses on recent EV registrations in Washington.
 * Identifying the Top Model: Among these filtered records, the code identifies the most popular EV model based on the number of registrations. The value_counts() method is used to count occurrences of each model, and the top one is selected.
 * The resulting map should show the locations of the top EV model in Washington state as of 2023, overlaid on a basemap for better geographic context. This analysis is useful for understanding the popularity and distribution of this EV model in Washington.
 
+<br>
+<br>
+<br>
 
-# Interactive Plot:
+### Interactive Plot:
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/final1.json" style="width: 100%"></vegachart>
+
+This interactive plot helps users explore and compare the popularity of different car makes over time and provides insight into the diversity of models available for each make. It's a valuable tool for anyone interested in understanding trends and variations in car sales data from 2010 onwards for the top 10 car manufacturers in this dataset.
+
+* **Line Plot:** The main plot on the left-hand side of the dashboard is a line plot titled "Number of Vehicles by Top 10 Makes and Model Year." It shows the trend in the number of vehicles for the selected car make over the years from 2010 onwards. Each line represents a different car make, and the color of the line corresponds to the selected make.
+
+* **Bar Plot:** The right-hand side of the dashboard displays a bar plot titled "Number of Model(s) for [Selected Make]." It shows the number of models available for the selected car make, providing a more detailed view of the variety within that make.
+
+* **Dynamic Bar Chart Update:** Upon selecting a range of years in the line plot, the bar chart on the right automatically updates to show data relevant to that selection. It displays the number of different models for the selected car make within the chosen year range.
+
+<br>
+<br>
+
+### Contextual Datasets
+
+The **"Electric_Vehicle_Title_and_Registration_Activity.csv"** dataset shows records of title activity (transactions recording changes of ownership), and registration activity (transactions authorizing vehicles to be used on Washington public roads). Here is the official link: https://data.wa.gov/Transportation/Electric-Vehicle-Title-and-Registration-Activity/rpr4-cgyd
+
+It provides detailed information about title and registration activities for electric vehicles, including:
+
+* **Clean Alternative Fuel Vehicle Type:** Type of electric vehicle (e.g., Battery Electric Vehicle (BEV)).
+* **VIN (Vehicle Identification Number):** Partial VIN numbers for individual vehicles.
+* **DOL Vehicle ID, Model Year, Make, Model:** Identifying and descriptive details of the vehicle.
+* **Vehicle Primary Use:** The primary use of the vehicle (e.g., Passenger).
+* **Specifications:** Electric Range, Odometer Reading.
+* **Odometer Code:** Type of odometer reading (e.g., Actual Mileage).
+* **Registration and Title Details:** Including transaction type, transaction date, and transaction price.
+* **Legislative and Utility Information:** Legislative District, Electric Utility.
+
+
+This dataset **"Electric_Vehicle_Title_and_Registration_Activity.csv"**, as one contexual dataset, complements the "Electric_Vehicle_Population_Data.csv" by providing more dynamic information such as odometer readings, transaction types, and dates, which reflect the usage and transaction history of electric vehicles. Given the content of both datasets, here are some ways the second dataset (Electric Vehicle Title and Registration Activity) can support the first one (Electric Vehicle Population Data):
+
+* **Vehicle Usage Insights:** Odometer readings from the title and registration dataset can give insights into how much electric vehicles are being used, which can be correlated with the population data to analyze usage patterns.
+
+* **Transaction Trends:** Understanding the transaction types and dates can help in analyzing the market dynamics, like how often electric vehicles are bought and sold, and how this trend correlates with the overall population of electric vehicles.
+
+* **Geographic Analysis:** Both datasets include geographic information which can be used to analyze regional differences in electric vehicle adoption and usage.
+
+* **Model and Make Analysis:** By comparing the models and makes in both datasets, one can analyze the popularity and longevity of different electric vehicle models.
+
+* **Policy Impact Analysis:** By correlating legislative district and utility information with vehicle types and usage, one can assess the impact of local policies on electric vehicle adoption.
+
+* **Environmental Impact Assessment:** The usage data (like odometer readings) combined with population data can help in estimating the environmental impact and benefits of electric vehicles in different regions.
 
 
 
