@@ -191,10 +191,11 @@ The visual data analyses reveal a strong consumer inclination towards new and te
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
+{% include elements/button.html link="https://github.com/XinzheMiao/XinzheMiao.github.io/blob/main/_data/Electric_Vehicle_Population_Data.csv" text="Dataset 1" %}
+{% include elements/button.html link="https://github.com/XinzheMiao/XinzheMiao.github.io/blob/main/_data/Electric_Vehicle_Title_and_Registration_Activity.zip" text="Dataset 2" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/XinzheMiao/XinzheMiao.github.io/blob/main/python_notebooks/Final%20Project%20Part3.ipynb" text="The Analysis" %}
 </div>
 
