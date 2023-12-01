@@ -151,10 +151,10 @@ This dataset **"Electric_Vehicle_Title_and_Registration_Activity.csv"**, as one 
 
 **Plot 6.1: Distribution of Clean Alternative Fuel Vehicle Types**
 
-* Our first visual analysis is a count plot that illustrates the frequency distribution of different types of clean alternative fuel vehicles within the dataset. The x-axis categorizes the vehicles into different fuel types, such as Battery Electric Vehicles (BEV) and Plug-in Hybrid Electric Vehicles (PHEV). The y-axis quantifies the number of vehicles within each category.
+* Our first visual analysis is a count plot that illustrates the frequency distribution of different types of clean alternative fuel vehicles within the dataset. The x-axis categorizes the vehicles into different fuel types, such as Battery Electric Vehicles (BEV), Plug-in Hybrid Electric Vehicles (PHEV) and Hydrogen Powered Vehicle. The y-axis quantifies the number of vehicles within each category.
 
 * Findings:
-BEVs significantly outnumber PHEVs, indicating a strong market preference for fully electric vehicles over hybrids.
+BEVs significantly outnumber PHEVs and Hydrogen Powered Vehicle, indicating a strong market preference for fully electric vehicles over hybrids.
 This trend suggests that consumers may favor the environmental benefits and potential cost savings associated with BEVs.
 The infrastructure and policy-making should continue to support the growth of BEV technology, which is likely to dominate the clean vehicle market.
 
