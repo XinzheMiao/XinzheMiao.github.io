@@ -143,6 +143,8 @@ This dataset **"Electric_Vehicle_Title_and_Registration_Activity.csv"**, as one 
 
 * **Environmental Impact Assessment:** The usage data (like odometer readings) combined with population data can help in estimating the environmental impact and benefits of electric vehicles in different regions.
 
+<br>
+<br>
 
 ### Contextual Dataset Visualization
 <img src="{{ site.baseurl }}/assets/pngs/plot6.png" style="width: 100%">
@@ -164,6 +166,27 @@ The infrastructure and policy-making should continue to support the growth of BE
 There is a substantial predominance of new EVs compared to used ones, implying a rapidly growing market with a high turnover of new models and technology.
 The prevalence of new EVs may indicate consumer confidence in newer technologies and a potential growth area for manufacturers and dealerships.
 The used EV market appears to be significantly smaller, which may suggest a lack of availability or consumer hesitation towards pre-owned electric vehicles.
+
+<br>
+
+**Plot 7: Type of Transaction Over Time**
+<img src="{{ site.baseurl }}/assets/pngs/plot7.png" style="width: 100%">
+
+This visualization showcases the types of transactions (such as original, renewal, etc.) over time, based on the 'Transaction Year' and 'Transaction Type' from the "Electric_Vehicle_Title_and_Registration_Activity" dataset. The line chart provides insights into the frequency and trends of different transaction types across the years.
+
+<br>
+
+**Plot 8:**
+<img src="{{ site.baseurl }}/assets/pngs/plot8.png" style="width: 100%">
+
+This visualization illustrates the distribution of different transaction types in the "Electric Vehicle Title and Registration Activity" dataset. This count plot provides insights into the most common types of transactions, such as original registrations, renewals, etc.
+
+<br>
+<br>
+
+### Conclusion
+
+The visual data analyses reveal a strong consumer inclination towards new and technologically advanced BEVs. The market shows significant potential for growth in the new vehicle sector, with less penetration in the used vehicle market. Manufacturers should capitalize on this trend to innovate and expand their BEV offerings. Meanwhile, the used EV market may require strategic initiatives to build consumer trust and expand its share. Policymakers and infrastructure planners can leverage these insights to foster an environment that supports the continued adoption of BEVs, contributing to sustainability goals.
 
 <!-- these are written in a combo of html and liquid --> 
 
